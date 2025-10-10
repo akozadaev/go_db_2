@@ -41,7 +41,7 @@ func main() {
 	for rows.Next() {
 		var name string
 		var age int
-		if err := rows.Scan(&name, &age); err != nil {
+		if err = rows.Scan(&name, &age); err != nil {
 			log.Fatal(err)
 		}
 		fmt.Printf("Имя: %s, Возраст: %d\n", name, age)

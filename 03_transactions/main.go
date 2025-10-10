@@ -1,4 +1,3 @@
-// transaction_example.go
 package main
 
 import (
